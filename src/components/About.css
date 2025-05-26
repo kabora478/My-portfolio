@@ -1,0 +1,80 @@
+.about {
+  padding: 100px 20px;
+  background: linear-gradient(145deg, #223257, #101e3d) !important;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #31ee0b;
+  text-shadow: 0 0 10px rgba(26, 188, 156, 0.5);
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-photo {
+  flex: 0 0 280px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.about-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 50px #1abc9c55;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 18px;
+  color: #c72a2a;
+  line-height: 1.8;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10pSx);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-text:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px #1abc9c33;
+}
+
+.typewriter {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1abc9c;
+  text-shadow: 0 0 8px rgba(26, 188, 156, 0.5);
+  height: 30px;
+}
+
+.animated-text {
+  display: inline-block;
+}
