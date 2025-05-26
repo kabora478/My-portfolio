@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
-
+import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -27,6 +27,7 @@ const App: React.FC = () => {
         <section id="education" data-aos="fade-up"><Education /></section>
         <section id="contact" data-aos="fade-up"><Contact /></section>
       </main>
+      <Footer />
     </>
   );
 };

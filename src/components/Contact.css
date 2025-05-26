@@ -1,72 +1,76 @@
-.about {
-  padding: 100px 20px;
-  background: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
-  color: #1e293b;
+.contact {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: #043e42;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.contact h2 {
   text-align: center;
+  margin-bottom: 1.5rem;
+  color: #45a010;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  color: #0f766e;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #d31c1c;
 }
 
-.about-content {
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.button-group {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.about-text {
-  max-width: 700px;
+.contact-form button,
+.whatsapp-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
   font-size: 1.1rem;
-  line-height: 1.8;
-  text-align: left;
-  background-color: #ffffffcc;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-text p {
-  margin-bottom: 1rem;
+.contact-form button {
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
 }
 
-.about-text strong {
-  color: #0ea5e9;
+.contact-form button:hover {
+  background-color: #0056b3;
 }
 
-.about-photo img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #0ea5e9;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+.whatsapp-button {
+  background-color: #25d366;
+  transition: background-color 0.3s ease;
 }
 
-.about-photo img:hover {
-  transform: scale(1.05) rotate(2deg);
-}
-
-/* Responsive Layout */
-@media (min-width: 768px) {
-  .about-content {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about-text {
-    flex: 1.2;
-    text-align: left;
-  }
-
-  .about-photo {
-    flex: 0.8;
-  }
+.whatsapp-button:hover {
+  background-color: #128c3e;
 }
